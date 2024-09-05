@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Counter from './Counter/Counter';
+import UppercaseCounter from './UpperCaseCount/CountUppercase';
+import FindCharacter from './FindCharacter/FindCharacter';
+import TodoList from './Todo/Todo';
+import ToggleButton from './ToggleButton/ToggleButton';
+import Greeting from './PassingData/Greeting';
+import ParentList from './PassingData/ParentList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ToggleButton/>
+      <Counter/>
+      <FindCharacter />
+      <UppercaseCounter/>
+      <TodoList/>
+      <Greeting/>
+      <ParentList/>
+    </>
   );
 }
 
